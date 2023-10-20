@@ -31,6 +31,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '18.x'
+      - name: Install
+        run: |
+          yarn install
       - name: Test
         run: |
           yarn test-headless
